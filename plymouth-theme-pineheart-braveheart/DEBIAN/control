@@ -1,0 +1,7 @@
+Package: plymouth-theme-pinephone-braveheart
+Version: 0.1.0
+Maintainer: Ruben Ruiz <ruben@rubenruiz.org>
+Description: This is a plymouth bootscreen based off of the current bootscreen for the debian+phosh image for the pinephone.
+Homepage: https://github.com/runlevelzero/Pinephone-Bootscreen
+Architecture: all
+Depends: plymouth

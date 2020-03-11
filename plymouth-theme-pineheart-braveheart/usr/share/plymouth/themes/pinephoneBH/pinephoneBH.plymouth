@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=PinePhoneBH
+Description=A Theme for the PinePhone Braveheart Edition
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/pinephoneBH
+ScriptFile=/usr/share/plymouth/themes/pinephoneBH/pinephoneBH.script
