@@ -1,5 +1,6 @@
 # restore the old config file
 rm /etc/plymouth/plymouthd.conf
+rm -rf /usr/share/plymouth/themes/pinephoneBH
 mv /etc/plymouth/plymouthd.conf.old /etc/plymouthd.conf
 
 
