@@ -77,7 +77,7 @@ fun hide_logo() {
 #----------------------------------------- Spinner --------------------------------
 
 for (i = 0; i < 12; i++)
-  spinner.images[i] = Image("spinner-" + i + ".jpg");
+  spinner.images[i] = Image("spinner-" + i + ".png");
 
 spinner.sprite = Sprite();
 
