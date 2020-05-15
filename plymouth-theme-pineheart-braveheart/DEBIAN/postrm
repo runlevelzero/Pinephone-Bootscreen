@@ -1,0 +1,14 @@
+# restore the old config file
+rm /etc/plymouth/plymouthd.conf
+rm -rf /usr/share/plymouth/themes/pinephoneBH
+mv /etc/plymouth/plymouthd.conf.old /etc/plymouthd.conf
+
+
+# Set it to be the new Splash Screen
+plymouth-set-default-theme -R pinephone
+
+# Make sure that initrd has been changed
+update-initramfs -u
+
+# A little hack that is needed to work on current builds of debian on the pinephone
+/etc/kernel/postinst.d/zz-u-boot 5.5-pinephone

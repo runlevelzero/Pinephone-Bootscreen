@@ -101,7 +101,7 @@ fun show_spinner() {
         }
         spinner.sprite.SetOpacity(spinner_opacity);
     }
-}
+} 
 
 fun hide_spinner() {
     spinner_time = 0;
@@ -111,9 +111,10 @@ fun hide_spinner() {
 
 #------------------------------------- Flavour Text ----------------------------
 
-unscaled_flavour = Image("flavourText.png");
+#unscaled_flavour = Image("flavourText.png");
+unscaled_flavour = Image("logoMobian.png");
 
-flavour_scale_factor = window_max.width / unscaled_flavour.GetWidth();
+flavour_scale_factor = window_max.width / (unscaled_flavour.GetWidth()*2);
 
 flavour.image = unscaled_flavour.Scale(unscaled_flavour.GetWidth() * flavour_scale_factor,
                                  unscaled_flavour.GetHeight() * flavour_scale_factor);
