@@ -76,7 +76,7 @@ fun hide_logo() {
 
 #----------------------------------------- Spinner --------------------------------
 
-for (i = 0; i < 12; i++)
+for (i = 0; i < 30; i++)
   spinner.images[i] = Image("spinner-" + i + ".png");
 
 spinner.sprite = Sprite();
@@ -86,7 +86,7 @@ spinner.sprite.SetY( Window.GetHeight() * spinner_v_alignment -   spinner.images
 
 
 fun refresh_spinner() {
-    spinner.sprite.SetImage(spinner.images[Math.Int(progress / 2) % 12]);
+    spinner.sprite.SetImage(spinner.images[Math.Int(progress / 2) % 30]);
 }
 
 spinner_time = 0;
@@ -101,7 +101,7 @@ fun show_spinner() {
         }
         spinner.sprite.SetOpacity(spinner_opacity);
     }
-}
+} 
 
 fun hide_spinner() {
     spinner_time = 0;
@@ -111,9 +111,10 @@ fun hide_spinner() {
 
 #------------------------------------- Flavour Text ----------------------------
 
-unscaled_flavour = Image("flavourText.png");
+#unscaled_flavour = Image("flavourText.png");
+unscaled_flavour = Image("logoMobian.png");
 
-flavour_scale_factor = window_max.width / unscaled_flavour.GetWidth();
+flavour_scale_factor = window_max.width / (unscaled_flavour.GetWidth()*2);
 
 flavour.image = unscaled_flavour.Scale(unscaled_flavour.GetWidth() * flavour_scale_factor,
                                  unscaled_flavour.GetHeight() * flavour_scale_factor);
