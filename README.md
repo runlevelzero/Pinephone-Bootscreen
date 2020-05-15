@@ -1,7 +1,5 @@
 # PinePhone Plymouth Theme
 
---
-
 This is a plymouth bootscreen based off of the current bootscreen for the debian+phosh image for the pinephone based off some of the guidelines listed in this [Gnome Boot Progress design sheet](https://wiki.gnome.org/Design/OS/BootProgress)
 
 I used the Monterrat font as it is the font that Pine64 uses all over their front page, it doesn't look bad, and the font is licensed under the Open Font License
