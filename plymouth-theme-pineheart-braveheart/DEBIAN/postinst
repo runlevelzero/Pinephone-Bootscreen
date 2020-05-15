@@ -10,6 +10,3 @@ plymouth-set-default-theme -R pinephoneBH
 
 # Make sure that initrd has been changed
 update-initramfs -u
-
-# A little hack that is needed to work on current builds of debian on the pinephone
-/etc/kernel/postinst.d/zz-u-boot 5.5-pinephone
